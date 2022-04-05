@@ -1,8 +1,5 @@
 
-body{
-   background-color: rgb(255, 196, 209, 0.4);
- 
-}
+
 *{
   padding: 0px;
   margin: 0px;
@@ -40,42 +37,36 @@ p{
 nav{
   position: sticky;
   top: 0;
- 
+  background-color: white;
+ }
+
+ nav .menu{
+width: 90%;
+max-width: 1000px;
+margin: 0 auto;
+text-align: center;
+padding: 10px;
 }
-nav.menu ul li{
+nav .menu ul{
+  list-style: none;
+}
+nav .menu ul li{
   display: inline-block;
 }
-
-
-
-nav.menu ul li.active{
-  background-color: red;
+nav .menu ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(43, 13, 49);
+  text-decoration: none;
+}
+nav .menu ul li.active{
+  background-color: rgb(250, 186, 236);
   transition: 0.3 ease background-color;
 }
 
-
-
-
-ul {
-    list-style-type: none;
-    padding: 10px;
-    background-color: rgb(255, 154, 196);
-    overflow: auto;
-
-  }
-    li {
-    float: left;
-  }
-    li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  li a:hover {
-    background-color: rgb(223, 118, 236);
-  }
+nav .menu ul li.active a{
+  color: rgb(207, 237, 37);
+}
 
 .grid-container{
     display: grid;
