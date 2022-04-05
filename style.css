@@ -3,6 +3,31 @@ body{
    background-color: rgb(255, 196, 209, 0.4);
  
 }
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+} 
+html {
+   scroll-behavior: smooth;
+}
+
+section{
+height: 120vh;
+width: 100%;
+}
+#home{
+  background-color: antiquewhite;
+}
+#projects{
+  background-color: indianred;
+}
+#aboutme{
+  background-color: aquamarine;
+}
+#contacts{
+  background-color: darkcyan;
+}
 h1, h2, h3, h4{
   font-size: 30px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -12,11 +37,31 @@ p{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   line-height: 1.5;
 }
+nav{
+  position: sticky;
+  top: 0;
+ 
+}
+nav.menu ul li{
+  display: inline-block;
+}
+
+
+
+nav.menu ul li.active{
+  background-color: red;
+  transition: 0.3 ease background-color;
+}
+
+
+
+
 ul {
     list-style-type: none;
     padding: 10px;
     background-color: rgb(255, 154, 196);
     overflow: auto;
+
   }
     li {
     float: left;
@@ -119,14 +164,6 @@ textarea{
   
 }
 
-.aboutme{
-  background-color: bisque;
- }
-
-
-  
-   
- 
  button{
 width: 15%;
 height: 30px;
@@ -138,6 +175,8 @@ cursor: pointer;
 text-align: center;
 position: relative;
  margin-left: 0px;
+ display: flex;
+ flex-direction: column;
  }
   button{
     background-color: beige;

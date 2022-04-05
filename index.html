@@ -8,14 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<ul>
-<li><a href="aboutme.asp">ABOUT ME</a></li>
-<li><a href="projects.asp">PROJECTS</a></li>
-<li><a href="contacts.asp">CONTACTS</a></li>
+  <nav>
+    <div class="menu">
+  <ul>
+<li class="home active"><a href="#home">HOME</a></li>
+<li class="projects"><a href="#projects">PROJECTS</a></li>
+<li class="aboutme"><a href="#aboutme">ABOUT ME</a></li>
+<li class="contacts"><a href="#contacts">CONTACTS</a></li>
 </ul>
-   
+ </div>  
+</nav>
 
+<section id="home">
 <h1>OLHA NIEMIETS</h1>
+</section>
+
+<section id="projects">
 <h2>Projects</h2>   
 
 <div class="grid-container">
@@ -41,18 +49,19 @@
       </div>
 
     </div>
+</section>
 
-<div class="aboutme">
+<section id="aboutme">
 
     <h3>About me</h3>
     <p> My name is Olha Niemeits. I have a master's degree in Geography, currently studying Swedish and programming.<br> 
        I hope for a successful continuation of my studies next year as well.</p>
-      
-</div>
+   
+</section>
+
+<section id="contacts">
     <h4>Contacts</h4>
-
-
-    <div class="contacts">
+    <div class="cont">
 
       <form action="name"class= "name">
        
@@ -72,6 +81,8 @@
     
      
     </div>
+  </section>
+
     <script src="index.js"></script>
 </body>
 </html>
