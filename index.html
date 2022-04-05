@@ -7,19 +7,21 @@
     <title>Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body></body>
+<body>
 <ul>
 <li><a href="aboutme.asp">ABOUT ME</a></li>
 <li><a href="projects.asp">PROJECTS</a></li>
 <li><a href="contacts.asp">CONTACTS</a></li>
 </ul>
-    
+   
+
 <h1>OLHA NIEMIETS</h1>
-    
+<h2>Projects</h2>   
+
 <div class="grid-container">
 
     <div class="grid-item">
-        <img src="https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/9afd3b92ab41ffca7f368a8fcbd6d39a75894efe0edbc14cf1f067cf625e6678.png">
+        <img src="/photo/dinogame.png">
           <div class="desc"><strong>Dinosaur game</strong></div>
       </div>
 
@@ -40,11 +42,36 @@
 
     </div>
 
+<div class="aboutme">
 
-    <h2>Projects</h2>
-    <button>Click!</button>
     <h3>About me</h3>
-    <
+    <p> My name is Olha Niemeits. I have a master's degree in Geography, currently studying Swedish and programming.<br> 
+       I hope for a successful continuation of my studies next year as well.</p>
+      
+</div>
+    <h4>Contacts</h4>
+
+
+    <div class="contacts">
+
+      <form action="name"class= "name">
+       
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="Enter your name"required> <br>
+        
+        <label for="email">E-mail</label><br>
+        <input type="text" name="email" id="email" placeholder="Enter your e-mail"required><br>
+     </form>  
+    
+     <label for="comments or suggestions">Message</label><br>
+            <textarea name="comments or suggestions" class="comments" id="" cols="30" rows="10"
+            placeholder="Enter your message here..."></textarea>
+            
+      <button class="button" type="send">SEND</button>
+            
+    
+     
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
